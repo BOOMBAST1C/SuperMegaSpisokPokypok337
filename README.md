@@ -18,15 +18,6 @@ Super SpiSok Pokypok
 - **Kotlin Coroutines Flow** - реактивное программирование
 - **Material 3** - дизайн система
 
-Структура проекта:
-
-com.example.shoppinglistapp
- -data/ Слой данных (DataStore)
- -domain/ Бизнес-модели
- -presentation/ ViewModel и UI (Compose)
- -ui.theme/ Темы и цвета
-
-
 Видео-обзор кода(без звука,скрины прилагаются):
 
 https://drive.google.com/drive/folders/16g0_ciXltk5aFNoaId2h1mZPCEAeBjTu?usp=sharing
