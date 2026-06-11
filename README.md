@@ -48,12 +48,12 @@ presentation — слой представления. Здесь ShoppingViewMod
 
 ui.theme — здесь настроены темы приложения (светлая и тёмная);
 
-MainActivity.kt
+MainActivity.kt:
 
-Здесь я создаю экземпляр AppRepository, передаю его в ViewModel через фабрику, и в Compose наблюдаю за состоянием 
+Здесь я создаю экземпляр AppRepository, передаю его в ViewModel через фабрику, и в Compose наблюдаю за состоянием.
 Тема приложения передаётся в ShoppingListAppTheme из ViewModel, что позволяет динамически менять тему во время работы приложения.
 
-ShoppingViewModel.kt
+ShoppingViewModel.kt:
 
 ViewModel использует StateFlow для реактивного обновления UI. В init блоке я запускаю observeData, который собирает изменения из DataStore.
 
@@ -69,7 +69,7 @@ ViewModel использует StateFlow для реактивного обно�
 
 Все изменения сразу сохраняются через repository.saveItems()."
 
-AppRepository.kt
+AppRepository.kt:
 
 Repository — это мост между ViewModel и DataStore.
 Для темы я использую booleanPreferencesKey, а для списка — stringPreferencesKey.
@@ -78,7 +78,7 @@ Repository — это мост между ViewModel и DataStore.
 
 isDarkThemeFlow и shoppingItemsFlow — это Flow, которые автоматически уведомляют ViewModel об изменениях.
 
-ShoppingListScreen.kt
+ShoppingListScreen.kt:
 
 UI полностью написан на Jetpack Compose.
 
