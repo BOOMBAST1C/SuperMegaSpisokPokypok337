@@ -60,8 +60,11 @@ ViewModel использует StateFlow для реактивного обно�
 Функции:
 
 -toggleTheme() — меняет тему и сохраняет в DataStore
+
 -addItem() — добавляет новый товар
+
 -toggleItemCheck() — отмечает товар как купленный
+
 -deleteItem() — удаляет товар
 
 Все изменения сразу сохраняются через repository.saveItems()."
@@ -70,7 +73,9 @@ AppRepository.kt
 
 Repository — это мост между ViewModel и DataStore.
 Для темы я использую booleanPreferencesKey, а для списка — stringPreferencesKey.
+
 Список сериализуется в строку формата: "id|name|isChecked,id2|name2|false"
+
 isDarkThemeFlow и shoppingItemsFlow — это Flow, которые автоматически уведомляют ViewModel об изменениях.
 
 ShoppingListScreen.kt
@@ -79,7 +84,7 @@ UI полностью написан на Jetpack Compose.
 
 Здесь есть:
 
-Row с заголовком и Switch для переключения темы
-OutlinedTextField для ввода нового товара
-LazyColumn для отображения списка
-ShoppingItemRow — отдельный компонент для каждого товара
+Row с заголовком и Switch для переключения темы.
+OutlinedTextField для ввода нового товара.
+LazyColumn для отображения списка.
+ShoppingItemRow — отдельный компонент для каждого товара.
