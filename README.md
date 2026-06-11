@@ -40,7 +40,7 @@ https://drive.google.com/drive/folders/16g0_ciXltk5aFNoaId2h1mZPCEAeBjTu?usp=sha
 Объяснение:
 
 Я использовал Clean Architecture с разделением на три основных слоя:
--data — слой данных. Здесь находится AppRepository, который работает с DataStore для сохранения настроек темы и списка покупок.
+-data — слой данных.Здесь находится AppRepository, который работает с DataStore для сохранения настроек темы и списка покупок.
 -domain — доменный слой. Здесь находится модель данных ShoppingItem — это простой data class с полями id, name и isChecked.
 -presentation — слой представления. Здесь ShoppingViewModel управляет бизнес-логикой, а ShoppingListScreen отвечает за UI на Jetpack Compose.
 -ui.theme — здесь настроены темы приложения (светлая и тёмная).
