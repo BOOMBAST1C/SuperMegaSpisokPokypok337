@@ -27,14 +27,9 @@ com.example.shoppinglistapp
  -ui.theme/ Темы и цвета
 
 
-Видео-обзор кода(без звука):
+Видео-обзор кода(без звука,скрины прилагаются):
 
-
-
-Скриншоты работы приложения:
-
-
-
+https://drive.google.com/drive/folders/16g0_ciXltk5aFNoaId2h1mZPCEAeBjTu?usp=sharing
 
 Установка:
 
